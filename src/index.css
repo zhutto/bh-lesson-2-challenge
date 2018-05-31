@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%
+}
+
+#page-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 200px auto 40px;
+  grid-template-rows: 15% auto 15%;
+}
+
+header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background-color: gainsboro;
+  display: inline-grid;
+  grid-template-columns: 40px auto 80px 80px 80px 40px;
+  grid-template-rows: 15% auto 15%;
+}
+
+header .logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header nav {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  display: inline-grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+}
+#company-name {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  align-self: center;
+}
+
+#google{
+  grid-column-start: 1;
+  grid-column-end: 2;
+ 
+}
+
+#microsoft {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#amazon {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+main {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background-color: green;
+}
+
+aside {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:yellow;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  background-color: pink;
+}
